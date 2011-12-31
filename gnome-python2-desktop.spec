@@ -28,7 +28,7 @@
 
 Name: gnome-python2-desktop
 Version: 2.28.0
-Release: 4%{?dist}
+Release: 4%{?dist}.goose.2
 License: GPLv2+
 Group: Development/Languages
 Summary: The sources for additional PyGNOME Python extension modules
@@ -329,6 +329,12 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitearch}/gtk-2.0/gnomekeyring.so
 
 %changelog
+* Fri Dec 30 2011 Clint Savage <herlo@gooseproject.org> - 2.28.0-4.goose.2
+- GoOSe Koji rebuild
+
+* Fri Dec 30 2011 Clint Savage <herlo@gooseproject.org> - 2.28.0-4.goose.1
+- Rebuilding in mock to bootstrap for recursive deps
+
 * Thu Jan 14 2010 Matthew Barnes <mbarnes@redhat.com> - 2.28.0-4.el6
 - Fix rpmlint warnings.
 
